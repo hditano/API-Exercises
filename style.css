@@ -2,14 +2,43 @@
     box-sizing: border-box;
 }
 
-div h1 {
+section {
+    width: 980px;
+    display: flex;
+    margin: 0 auto 0 auto;
+}
+
+
+nav {
+    display: flex;
+    padding: 0 .5em;
+    background-color: rgb(175, 170, 170);
+    width: 100%;
+    height: auto;
+    font-size: 1.5rem;
+}
+
+nav h1 {
+    margin: .25em auto .25em auto;
     text-align: center;
 }
 
-div button {
-    width: 10%;
-    height: 25px;
-    margin-left: 45%;
-    margin-right: 45%;
-    margin-top: 50px;
+div {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div h3 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+}
+
+div p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
 }

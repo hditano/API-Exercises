@@ -7,7 +7,7 @@ body.appendChild(div)
 div.appendChild(h1);
 div.appendChild(p);
 div.appendChild(triggerButton);
-triggerButton.textContent = 'New Idea';
+triggerButton.textContent = 'Show Posts';
 const newArray = [];
 
 // const img = document.createElement('img');
@@ -30,8 +30,9 @@ triggerButton.addEventListener('click', function() {
             const postArray = data.slice(0,5);
             let html = '';
             for(let post of postArray) {
-                html += `<h1>${post.title} </h1> 
-                        <p>${post.body}</p>`
+                html += `<h3>${post.title} </h3> 
+                        <p>${post.body}</p>
+                        <hr />`
             }
             div.innerHTML = html;
         })
