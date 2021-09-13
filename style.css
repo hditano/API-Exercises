@@ -23,6 +23,24 @@ nav h1 {
     text-align: center;
 }
 
+
+#text-title {
+    display: flex;
+    width: 40%;
+}
+
+#text-area {
+    display: block;
+    width: 40%;
+    height: 60px;
+}
+
+.submit-btn {
+    margin-top: .50em;
+    width: 100px;
+    height: 30px;
+}
+
 div {
     width: 980px;
     margin-left: auto;
