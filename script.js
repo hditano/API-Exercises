@@ -25,9 +25,9 @@ fetch('https://apis.scrimba.com/jsonplaceholder/posts', {
 
 function renderPosts() {
     let html = '';
-    for (let post of postsArrays) {
-        html += `<h3>${post.title} </h3> 
-                <p>${post.post}</p>
+    for (let posts of postsArrays) {
+        html += `<h3>${posts.title} </h3> 
+                <p>${posts.body}</p>
                 <hr />`
     }
     div.innerHTML = html;
@@ -40,7 +40,7 @@ submitBtn.addEventListener('click', function (e) {
 
     const data = {
         title: textTitle,
-        post: textArea
+        body: textArea
     }
 
 
@@ -58,4 +58,11 @@ submitBtn.addEventListener('click', function (e) {
             postsArrays.unshift(post);
             renderPosts()
         })
+        clearForm();
+
 })
+
+function clearForm() {
+    const textTitle = document.getElementById('text-title').value = '';
+    const textArea = document.getElementById('text-area').value = '';
+}
