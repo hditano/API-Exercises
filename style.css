@@ -28,21 +28,26 @@ nav h1 {
     width: 25%;
 }
 
+
 #text-title {
     display: flex;
     width: 40%;
+    border-radius: .25em;
 }
 
 #text-area {
     display: block;
     width: 40%;
     height: 60px;
+    border-radius: .25em;
 }
 
 .submit-btn {
     margin-top: .50em;
     width: 100px;
     height: 30px;
+    border-radius: .25em;
+    background-color: rgb(161, 156, 156);
 }
 
 div {
